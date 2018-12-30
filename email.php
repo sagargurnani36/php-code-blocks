@@ -2,7 +2,7 @@
 /** Get emails from the query string **/
 $emails = $_GET['emails'] ?? null;
 
-/** If there are nor emails stop the code execution with message **/
+/** If there are no emails stop the code execution with a message **/
 if($emails == null) {
 	die('No email addresses found! You can add emails to the query string i.e. ?emails=[emails_separated_by_comma]');
 }
